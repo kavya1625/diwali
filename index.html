@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .title{
+            color:aqua
+        }
+        body{
+            min-height:100vh;
+            background-size:cover;
+            background-image:url("https://wallpapers.com/images/hd/plain-yellow-background-sz8rral13llcyqn8.jpg");
+        }
+        .parent-container{
+            border-radius: 20px;
+            background-color:aliceblue;
+            width:40%;
+            padding:3%;
+            text-align:center;
+            margin-top:2%;
+            margin:auto;
+        }
+        .form-field{
+            margin:10px
+        }
+        .form-field input,.form-btn{
+            padding:10px;
+            width:30%;
+        }
+    </style>
+</head>
+<body>
+    <form class="parent-container" action ="login.html">
+        <h2 class="title">Registration</h2>
+        <div class="form-field">
+           <input type="email"
+    name="email"
+    required
+    placeholder="Enter your name"/>
+    </div>
+    <div class="form-field">
+    <input type="Password"
+    name="Password"
+    required
+    placeholder="Enter Password"/>
+    </div>
+     <div class="form-field">
+        <input type="Password"
+        required
+        Placeholder="Confirm_Password"/>
+     </div>
+     <div class="form-field">
+        <input type="number"
+        required
+        placeholder="Mobile number"/> 
+     </div>
+     <button calss="form-btn">submit</button> 
+     <p>ALreday have an account  
+     <a href="login.html">Login</a>
+     </p>
+     </form>
+</body>
+</html>

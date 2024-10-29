@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>HAPPY DIWALI</h1>  
+    <div>
+        Diwali, also known as the "Festival of Lights," is one of the most celebrated festivals in India. It signifies the victory of light over darkness, good over evil, and knowledge over ignorance. This vibrant festival has deep cultural, spiritual, and social significance for Hindus, Sikhs, Jains, and Buddhists across the world. According to Hindu mythology, Diwali commemorates the return of Lord Rama to Ayodhya after 14 years of exile, during which he defeated the demon king Ravana. To celebrate his return, the people of Ayodhya illuminated their city with rows of oil lamps, marking the origins of this grand festival.
+The festivities last for five days, each day having its own significance and customs. The first day, Dhanteras, is dedicated to wealth and prosperity, where people buy gold, silver, or utensils as an auspicious ritual. The second day, Naraka Chaturdashi or Choti Diwali, commemorates the victory of Lord Krishna over the demon Narakasura, symbolizing the triumph of good over evil. Diwali, the third day, is the most significant; families gather to perform Lakshmi Puja, seeking blessings from the goddess of wealth. Houses are decorated with vibrant rangolis, and diyas (oil lamps) are lit to welcome prosperity and remove darkness.
+    </div>
+    <img src="https://i.pinimg.com/originals/9e/8d/e0/9e8de05275634a6640302a31f8a06309.jpg"alt="">
+  <script>
+    function launchConfetti() {
+    const duration = 7 * 1000; // 10 seconds
+    const end = Date.now() + duration;
+    const colors = ['#ffeb3b', '#8F00FF', '#ff5722', '#4caf50', '#FFFFFF',"#000000"];
+    (function frame() {
+        confetti({
+            particleCount: 6, // Reduced number of particles
+            startVelocity: 80,
+            spread: 450,
+            ticks: 190,
+            origin: { x: 0.5, y: 0.5 }, // Start from top center
+            colors: colors,
+        });
+        if (Date.now() < end) {
+            requestAnimationFrame(frame);
+        }
+    }());
+}
+window.onload = function() {
+    launchConfetti();
+}
+</script>
+</body>
